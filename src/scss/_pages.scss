@@ -1,0 +1,214 @@
+main {
+  background-color: $color-gray;
+  margin-top: 40px;
+  border-radius: 25px;
+  padding-bottom: 50px;
+  box-shadow: 2px 2px 10px $color-black;
+}
+
+.header {
+  background-color: $color-mahogany;
+  text-align: center;
+  padding-top: 25px;
+  border-radius: 0 0 25px 25px;
+  & > a {
+    color: $color-wheat;
+    font-size: 40px;
+    font-weight: $fw-bold;
+    span {
+      color: $color-white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.statsBar {
+  margin-top: 20px;
+  border-top: 3px solid $color-black;
+  border-bottom: 3px solid $color-black;
+  padding-block: 15px;
+  background-color: $color-wheat;
+  text-align: center;
+  &__onlineNow {
+    h4 {
+      color: $color-green;
+      display: inline-block;
+      position: relative;
+      padding-left: 25px;
+      font-weight: $fw-bold;
+      font-size: 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: $color-green;
+      }
+      span {
+        color: $color-black;
+        font-size: 15px;
+      }
+    }
+  }
+  &__totalModel {
+    h4 {
+      color: $color-purplel;
+      font-size: 25px;
+      font-weight: $fw-bold;
+      span {
+        font-size: 15px;
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.filterBar {
+  margin-top: 20px;
+  h3 {
+    color: $color-wheat;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .isMySearch {
+    margin-top: 10px;
+    background-color: rgba($color-white, 0.8);
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+    p {
+      font-weight: $fw-bold;
+      margin-bottom: 0;
+      color: $color-mahogany;
+      span {
+        font-weight: $fw-medium;
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.modelCategory {
+  margin-top: 40px;
+  h3 {
+    font-size: 30px;
+    color: $color-wheat;
+    font-weight: $fw-bold;
+    letter-spacing: 2px;
+  }
+}
+
+.models {
+  &__card {
+    margin-top: 30px;
+    border: 3px solid $color-white;
+    background-color: $color-white;
+    padding: 15px;
+    &--image {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: center top;
+      }
+      .models__overlayInfo {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $color-wheat;
+        padding-block: 8px;
+        display: flex;
+        justify-content: space-around;
+        .country {
+          h5 {
+            font-size: 15px;
+            color: $color-gray;
+          }
+        }
+        .status {
+          h5 {
+            font-size: 16px;
+            font-weight: $fw-bold;
+            position: relative;
+            padding: 2px 5px;
+            &::after {
+              content: "";
+              position: absolute;
+              left: -10px;
+              top: -4px;
+              height: 15px;
+              width: 15px;
+              border-radius: 100%;
+            }
+          }
+          &.online {
+            h5 {
+              color: $color-green;
+
+              border: 1px solid rgba($color-green, 0.4);
+              &::after {
+                background-color: $color-green;
+              }
+            }
+          }
+          &.busy {
+            h5 {
+              color: $color-red;
+
+              border: 1px solid rgba($color-mahogany, 0.2);
+              &::after {
+                background-color: rgba($color-mahogany, 0.6);
+              }
+            }
+          }
+          &.offline {
+            h5 {
+              color: $color-gray;
+
+              border: 1px solid rgba($color-gray, 0.2);
+              &::after {
+                background-color: rgba($color-gray, 0.6);
+              }
+            }
+          }
+        }
+      }
+    }
+    &--info {
+      margin-top: 15px;
+      .modelName {
+        h4 {
+          color: $color-black;
+          font-size: 18px;
+          font-weight: $fw-bold;
+        }
+      }
+      .modelAge {
+        h4 {
+          color: $color-black;
+          font-size: 18px;
+          font-weight: $fw-bold;
+        }
+      }
+    }
+  }
+}
+
+.nofounnd {
+  margin-top: 40px;
+  text-align: center;
+  h2 {
+    color: $color-mahogany;
+  }
+  p {
+    color: $color-mahogany;
+  }
+}
