@@ -1,73 +1,82 @@
-# FindFriend 👥
+# 🧑‍🤝‍🧑 FindFriend – Model Explorer
 
-**FindFriend** is a modern social/dating-style web app built using React and Vite. It showcases a list of user model cards that can be filtered by name, age, location, and status (Online, Offline, Busy). This project is designed for learning and fun purposes, with plans to implement more advanced features like category filters, ratings, and user onboarding.
+**FindFriend** (WiNkly) is a responsive, filterable React-based model directory
+where users can explore profiles, check availability status,
+and refine results based on **name**, **age range**, **country**,
+and **status** (online/busy/offline).
+
+Built with a modular component architecture and enhanced with Bootstrap styling.
+
+![App Screenshot](./src/assets/app-preview.jpg)
 
 ---
 
 ## 🚀 Features
 
-- Browse cards with model photo, name, age, country, and status
-- Show total models + currently online count
-- Filter users by:
-  - Name
-  - Age
-  - Location
-  - Status (Live, Busy, Offline)
-- Display categories:
-  - New Models (based on join date)
-  - Top Models (rating or featured - future plan)
+- 🔍 **Live Filtering** by:
+
+  - Name (search box)
+  - Age range (dropdown)
+  - Country (with count)
+  - Online Status: Online, Busy, Offline
+
+- 📊 **Stats Bar** showing:
+
+  - Total models available
+  - Live count of online models
+
+- 🧩 **Component-Based Structure** using React:
+
+  - `FilterBar`, `ModelCard`, `StatsBar`, `ModelCategory`, etc.
+
+- 🎨 **Modern UI**:
+  - Fully responsive layout
+  - Styled using Bootstrap + SCSS
 
 ---
 
-## 🧱 Tech Stack
+## 📁 Folder Structure
 
-- **React** (with Vite)
-- **SCSS** for styling
-- **Bootstrap** for layout/grid system
-- **Modular components** for clean structure
+FindFriend/ ├── public/ ├── src/ │ ├── assets/ # Images & visuals │ ├── components/ # Reusable React components │ │ ├── FilterBar.jsx │ │ ├── Header.jsx │ │ ├── ModelCard.jsx │ │ ├── ModelCategory.jsx │ │ └── StatsBar.jsx │ ├── data/ │ │ └── modelData.js # Static data for models │ ├── scss/ # Custom styles │ ├── App.jsx # Main app logic │ └── main.jsx # Entry point
 
 ---
 
-## 🗂️ Folder Structure
+## 🛠 Tech Stack
 
-findfriend/ ├── public/ ├── src/ │ ├── assets/ # Images and static media │ ├── components/ # Reusable components (ModelCard, Header, FilterBar, etc.) │ ├── data/ # JSON or JS files with mock model data │ ├── pages/ # Optional: Home, Profile, etc. │ ├── styles/ # SCSS files │ │ ├── main.scss │ │ ├── \_variables.scss │ │ ├── \_mixins.scss │ │ └── \_modelCard.scss │ ├── App.jsx # Main App component │ └── main.jsx # Root entry point ├── index.html ├── vite.config.js ├── package.json ├── .gitignore
+- **React.js**
+- **Bootstrap 5**
+- **SCSS**
+- **Vite** (for fast build and dev)
 
 ---
 
-## 🧹 Initial Setup Instructions
+## 🌐 Live Demo
 
-1. **Clean Vite default files**  
-   Remove the following:
+> [View Live](https://your-live-demo-link.com)
 
-   - `vite.svg` from `/public`
-   - Default content from `App.jsx`, `App.css`, `index.css`
+---
 
-2. **Create folder structure**
+## 📦 Getting Started
 
-   - `src/components`
-   - `src/data`
-   - `src/styles`
+### 1. Clone the repository
 
-3. **Install dependencies**
+```bash
+git clone https://github.com/dev-hemraj/findfriend.git
+cd findfriend
+```
 
-   ```bash
-   npm install
-   ```
+---
 
-   ## 📌 To-Do (Upcoming Features)
+## 🙌 Credits
 
-   Rating system for top models
+Designed and developed by **Hemraj Bhatt**  
+Feel free to fork, contribute, or use the project for learning and showcase.
 
-   Date-based sorting for “New Models”
+---
 
-   Real-time status updates
+## 🙌 Acknowledgements
 
-   Modal for detailed profile
+- Model images used in this project are sourced from [Unsplash](https://unsplash.com/).  
+  Special thanks to all the amazing photographers.
 
-   Responsive mobile layout
-
-## 📸 UI Preview (Coming soon)
-
-## 📄 License
-
-This project is open-source and free to use for educational and personal development purposes.
+- Thanks to [ChatGPT by OpenAI](https://openai.com/chatgpt) for assistance in crafting and polishing this README.
