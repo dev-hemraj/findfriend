@@ -52,7 +52,7 @@ FindFriend/ ├── public/ ├── src/ │ ├── assets/ # Images & vi
 
 ## 🌐 Live Demo
 
-> [View Live](https://your-live-demo-link.com)
+> [View Live](https://dev-hemraj.github.io/findfriend/)
 
 ---
 
